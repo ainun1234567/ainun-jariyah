@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinobi Arena: Ultimate Jutsu Showdown!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Shinobi Arena: Ultimate Jutsu Showdown!</h1>
+        <nav>
+            <ul>
+                <li><a href="#daftar_ninja">Daftar Ninja</a></li>
+                <li><a href="#beli_ninja">Beli Ninja</a></li>
+                <li><a href="#simpan_ninja">Simpan Ninja</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="daftar_ninja">
+            <h2>Daftar Ninja</h2>
+            <table border=1>
+                <thead>
+                    <tr>
+                        <th>Nama Ninja</th>
+                        <th>Desa</th>
+                        <th>Jutsu</th>
+                        <th>Harga</th>
+                    </tr>
+                        <th>Naruto Uzumaki</th>
+                        <th>Konohagakure</th>
+                        <th>Mugen Tsukuyomi</th>
+                        <th>90.000</th>
+                    <tr>
+                        <th>Sasuke Uchiha</th>
+                        <th>Amegakure</th>
+                        <th>Chidori Nagashi</th>
+                        <th>50.000</th>
+                    </tr>
+                        <th>Sakura Haruno</th>
+                        <th>Otogakure</th>
+                        <th>Cherry Blossom Impact</th>
+                        <th>70.000</th>
+                    <tr>
+                        <th>Kakashi Hatake</th>
+                        <th>Hoshigakure</th>
+                        <th>Kuchiyose no Jutsu</th>
+                        <th>65.000</th>
+                    </tr>
+                        <th>Tsunade</th>
+                        <th>Kumogakure</th>
+                        <th>Segel Byakugou</th>
+                        <th>75.000</th>
+                    <tr>
+                        <th>Jiraiya</th>
+                        <th>Iwagakure</th>
+                        <th>Senpo Goemon</th>
+                        <th>85.000</th>
+                    </tr>    
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </section>
+
+        <section id="beli_ninja">
+            <h2>Beli Ninja</h2>
+            <form action="beli_ninja.php" method="post">
+                <label for="namaNinja">Nama Ninja:</label>
+                <select id="namaNinja" name="namaNinja">
+                    </select>
+                <br>
+                <input type="submit" value="Beli">
+            </form>
+        </section>
+
+        <section id="simpan_ninja">
+            <h2>Simpan Ninja</h2>
+            <form action="simpan_ninja.php" method="post">
+                <label for="namaNinja">Nama Ninja:</label>
+                <input type="text" id="namaNinja" name="namaNinja">
+                <br>
+                <input type="submit" value="Simpan">
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
